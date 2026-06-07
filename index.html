@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happiness Hub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+<h1>🌈 Happiness Hub</h1>
+<p>Small activities, better mood, calmer mind.</p>
+<button onclick="scrollToMood()">Start Mood Check</button>
+<button onclick="emergencyCalm()">Emergency Calm</button>
+<button onclick="toggleTheme()">🌙 Theme</button>
+</header>
+
+<section id="mood">
+<h2>😊 Mood Mirror</h2>
+<select id="moodSelect">
+<option>Happy</option>
+<option>Sad</option>
+<option>Stressed</option>
+<option>Tired</option>
+<option>Angry</option>
+</select>
+<button onclick="checkMood()">Get Recommendation</button>
+<p id="result"></p>
+</section>
+
+<section>
+<h2>🫁 Breathing Exercise</h2>
+<div id="breathingCircle"></div>
+<p>Inhale as it expands, exhale as it shrinks.</p>
+</section>
+
+<section>
+<h2>🎮 Calm Arcade</h2>
+<p>Pop bubbles to relax.</p>
+<div id="gameArea"></div>
+<p>Score: <span id="score">0</span></p>
+</section>
+
+<section>
+<h2>🌲 Nature Nest</h2>
+<div class="cards">
+<div class="card">🏖 Beach</div>
+<div class="card">🌧 Rain</div>
+<div class="card">🌲 Forest</div>
+<div class="card">🌄 Sunset</div>
+</div>
+</section>
+
+<section>
+<h2>🎵 Melody Space</h2>
+<ul>
+<li><a href="https://www.youtube.com/results?search_query=relaxing+piano+music" target="_blank">Calm Piano</a></li>
+<li><a href="https://www.youtube.com/results?search_query=rain+sounds" target="_blank">Rain Sounds</a></li>
+<li><a href="https://www.youtube.com/results?search_query=ocean+waves" target="_blank">Ocean Waves</a></li>
+</ul>
+</section>
+
+<section>
+<h2>💡 Comfort Corner</h2>
+<button onclick="advice()">Get Advice</button>
+<p id="adviceBox"></p>
+</section>
+
+<section>
+<h2>✨ Happy Sparks</h2>
+<button onclick="quote()">Daily Quote</button>
+<p id="quoteBox"></p>
+
+<h3>🙏 Gratitude Wall</h3>
+<input id="gratitudeInput" placeholder="Something you're grateful for">
+<button onclick="saveGratitude()">Save</button>
+<ul id="gratitudeList"></ul>
+</section>
+
+<footer>
+<p>Made with ❤️ for The Dynamics of Happiness Project</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

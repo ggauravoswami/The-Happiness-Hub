@@ -1,0 +1,61 @@
+
+body{
+font-family:Arial,sans-serif;
+margin:0;
+background:linear-gradient(135deg,#f8fbff,#e5d9ff);
+text-align:center;
+color:#333;
+}
+.hero{
+padding:60px 20px;
+}
+button{
+padding:10px 15px;
+margin:5px;
+border:none;
+border-radius:20px;
+cursor:pointer;
+}
+section{
+padding:30px;
+}
+#breathingCircle{
+width:120px;
+height:120px;
+background:#aee2ff;
+border-radius:50%;
+margin:auto;
+animation:breathe 8s infinite;
+}
+@keyframes breathe{
+0%,100%{transform:scale(1);}
+50%{transform:scale(1.5);}
+}
+.cards{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+.card{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+#gameArea{
+position:relative;
+height:250px;
+}
+.bubble{
+position:absolute;
+width:40px;
+height:40px;
+background:#ffd6e7;
+border-radius:50%;
+cursor:pointer;
+}
+.dark{
+background:#222;
+color:white;
+}
